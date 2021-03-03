@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 const report = (props) => {
   return (
@@ -15,4 +16,4 @@ const report = (props) => {
   );
 };
 
-export default report;
+export default withRouter(report);
