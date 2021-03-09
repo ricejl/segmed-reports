@@ -13,9 +13,11 @@ class App extends Component {
     };
 
     return (
-      <div className="App">
-        <header>
-          <img style={logoStyle} src={logo} alt="logo"></img>
+      <div className="App container-fluid">
+        <header className="row">
+          <div className="col">
+            <img style={logoStyle} src={logo} alt="logo"></img>
+          </div>
         </header>
         <ReportHub />
         <footer></footer>

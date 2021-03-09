@@ -3,16 +3,20 @@ import { withRouter } from "react-router-dom";
 
 const report = (props) => {
   return (
-    <tr
+    <div
+      className="row ReportRow"
       onClick={() => {
         props.viewReport(props.id);
       }}
     >
-      <td className="ReportTitle">{props.title}</td>
-      <td className="ReportHeadline">
-        {props.headline} <span className="ReportBody">- {props.text}</span>
-      </td>
-    </tr>
+      <div className="col-xs-6 col-md-4 col-lg-3 col-xl-2 ReportTitle">
+        {props.title}
+      </div>
+      <div className="col HeadlineBody">
+        <span className="ReportHeadline">{props.headline}</span>
+        <span className="ReportBody"> - {props.text}</span>
+      </div>
+    </div>
   );
 };
 

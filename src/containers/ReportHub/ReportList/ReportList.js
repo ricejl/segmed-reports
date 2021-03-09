@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Report from "../../../components/Report/Report.js";
 import axios from "axios";
-import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
 
 class ReportList extends Component {
@@ -31,7 +30,7 @@ class ReportList extends Component {
     if (!this.state.error) {
       reports = this.state.reports.map((report) => {
         return (
-          <Link to={"/" + report.id} key={report.id}>
+          <Link to={"/" + report.id} key={report.id} className="ReportLink">
             <Report
               title={report.title}
               text={report.text}
@@ -45,9 +44,9 @@ class ReportList extends Component {
     }
 
     return (
-      <Table className="Table" bordered hover variant="dark">
-        <tbody>{reports}</tbody>
-      </Table>
+      <div className="TableFormat col-12">
+        <div>{reports}</div>
+      </div>
     );
   }
 }

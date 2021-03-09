@@ -1,17 +1,47 @@
-tr {
-  max-height: 10px;
+.ReportTitle {
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 50px 12px 15px;
+  min-width: 250px;
+  max-width: 22ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.ReportTitle {
-  font-weight: 700;
-  margin: auto 2px;
-  width: 20%;
+.ReportRow {
+  white-space: nowrap;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.HeadlineBody {
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .ReportHeadline {
   color: whitesmoke;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ReportBody {
   color: rgb(156, 156, 156);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ReportLink,
+.ReportLink:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ReportRow:hover {
+  background-color: rgba(255, 255, 255, 0.075);
 }

@@ -8,7 +8,6 @@ class ReportDetail extends Component {
 
   componentDidMount() {
     let reportId = this.props.match.params.id;
-    //send axios call to get uri?
     axios.get("https://localhost:5001/reports/" + reportId).then((response) => {
       console.log(response);
       this.setState(
@@ -36,17 +35,5 @@ class ReportDetail extends Component {
     );
   }
 }
-
-// const reportDetail = (props) => {
-//   if (!props.report.id) {
-//     return <div></div>;
-//   }
-//   return (
-//     <div className="ReportDetail">
-//       <div>{props.report.title}</div>
-//       <iframe src={props.report.uri} title={props.report.title}></iframe>
-//     </div>
-//   );
-// };
 
 export default ReportDetail;

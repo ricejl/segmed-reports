@@ -7,10 +7,11 @@ class ReportHub extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="ReportHub">
-          {/* <ReportList /> */}
-          <Route path="/" exact component={ReportList} />
-          <Route path="/:id" component={ReportDetail} />
+        <div className="ReportHub row">
+          <div className="col p-4">
+            <Route path="/" exact component={ReportList} />
+            <Route path="/:id" component={ReportDetail} />
+          </div>
         </div>
       </BrowserRouter>
     );
