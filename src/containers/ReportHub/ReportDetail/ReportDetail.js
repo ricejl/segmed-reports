@@ -30,7 +30,12 @@ class ReportDetail extends Component {
     return (
       <div className="ReportDetail">
         <div>{report.title}</div>
-        <iframe src={report.uri} title={report.title}></iframe>
+        <hr />
+        <iframe
+          className="ReportSource"
+          src={report.uri}
+          title={report.title}
+        ></iframe>
       </div>
     );
   }

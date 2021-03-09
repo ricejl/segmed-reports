@@ -2,3 +2,9 @@
   background-color: #212529;
   border-color: #32383e;
 }
+
+.ReportSource {
+  border: none;
+  width: 100%;
+  height: 60vh;
+}
