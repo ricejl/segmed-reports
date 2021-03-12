@@ -13,7 +13,11 @@ const report = (props) => {
         {props.title}
       </div>
       <div className="col HeadlineBody">
-        <span className="ReportHeadline">{props.headline}</span>
+        <div className="ReportHeadline">
+          <span className="HeadlineOverflow">
+            <span>{props.headline}</span>
+          </span>
+        </div>
         <span className="ReportBody"> - {props.text}</span>
       </div>
     </div>

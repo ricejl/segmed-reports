@@ -26,6 +26,13 @@
   color: whitesmoke;
   white-space: nowrap;
   overflow: hidden;
+  display: inline-flex;
+  flex-shrink: 1;
+}
+
+.HeadlineOverflow {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -34,6 +41,9 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 .ReportLink,
